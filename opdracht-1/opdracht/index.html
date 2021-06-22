@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 1</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap-5-0-1.css" />
+    <script defer src="../../bootstrap/bootstrap-5-0-1.js"></script>
+
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Opdracht 1</h1>
+        <ul class="list-group mb-3" id="lijst">
+          <li class="list-group-item">Een item</li>
+          <li class="list-group-item">Nog een item</li>
+          <li class="list-group-item">Nog een ander item</li>
+        </ul>
+
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            name="item-input"
+            id="item-input"
+            placeholder="Nieuw item"
+          />
+        </div>
+
+        <!-- Voeg aan #knop-1 een click handler toe in de HTML. -->
+        <!-- Indien er geklikt wordt, moet 'itemToevoegen()' uitgevoerd worden. -->
+        <button
+          id="knop-1"
+          type="button"
+          class="btn btn-primary"
+          onclick="itemToevoegen()"
+        >
+          Knop 1
+        </button>
+
+        <!-- Voeg aan #knop-2 een click handler toe in JavaScript (index.js). -->
+        <button id="knop-2" type="button" class="btn btn-secondary">
+          Knop 2
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

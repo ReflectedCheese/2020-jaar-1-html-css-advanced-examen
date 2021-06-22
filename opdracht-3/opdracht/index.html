@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 3</title>
+
+    <link rel="stylesheet" href="../../bootstrap/bootstrap-5-0-1.css" />
+    <script defer src="../../bootstrap/bootstrap-5-0-1.js"></script>
+
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    </style>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Opdracht 3</h1>
+        <h2>Score van cursisten</h2>
+
+        <button
+          type="button"
+          class="btn btn-primary m-3"
+          onclick="cursistenToevoegen()"
+        >
+          Genereer scores
+        </button>
+
+        <div class="cards">
+          <div class="card" style="width: 250px">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

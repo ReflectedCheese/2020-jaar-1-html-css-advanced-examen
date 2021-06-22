@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 2</title>
+
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Opdracht 2</h1>
+        <ul id="lijst">
+          <li>Een item</li>
+          <li>Nog een item</li>
+          <li>Nog een ander item</li>
+        </ul>
+
+        <input
+          type="text"
+          name="item-input"
+          id="item-input"
+          placeholder="Nieuw item"
+          value="<img src='#' onerror='alert(1)' />"
+        />
+
+        <button id="knop-1" type="button" onclick="xssProbleem()">
+          Is XSS opgelost?
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
